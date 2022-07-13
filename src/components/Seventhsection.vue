@@ -1,6 +1,6 @@
 <template>
     <section class="instructions section-head" id="instructions">
-    <div class="container">
+    <div class="instruction-container">
         <div class="instructions-msg">
             <h2>Follow steps to washing hands</h2>
             <a href="#faq">Why do I need to wash my hand <i class="fas fa-arrow-right"></i></a>
@@ -60,16 +60,16 @@
 </template>
 
 <style>
-.instructions
+.instruction-container
 {
     background-color: #f7f9fe;
     padding: 100px 0;
 }
-.instructions .instructions-msg
+.instruction-container .instructions-msg
 {
     text-align: center;
 }
-.instructions .instructions-msg h2
+.instruction-container .instructions-msg h2
 {
     margin-bottom: 20px;
     color: #461414;
@@ -77,35 +77,38 @@
     font-style: bold;
     font-weight: 700;
 }
-.instructions .instructions-msg a
+.instruction-container .instructions-msg a
 {
     text-decoration: none;
     color: #4880d3;
     font-weight: bold;
     font-style: italic;
 }
-.instructions .instructions-msg a i
+.instruction-container .instructions-msg a i
 {
     margin-left: 10px;
 }
-.instructions .instructions-imgs
+.instruction-container .instructions-imgs
 {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin: 50px 150px 50px 285px;
+    width: 70%;
+    
 }
-.instructions .instructions-imgs .instructions-imgs-container
+.instruction-container .instructions-imgs .instructions-imgs-container
 {
     flex-basis: 10%;
+    align-self: center;
     margin: auto;
 }
-.instructions .instructions-imgs .instructions-imgs-container .instructions-img
+.instruction-container .instructions-imgs .instructions-imgs-container .instructions-img
 {
     width: 100%;
 }
-.instructions .instructions-imgs .instructions-imgs-container .instructions-img img
+.instruction-container .instructions-imgs .instructions-imgs-container .instructions-img img
 {
-    max-width: 100%;
+    max-width: 70%;
     border-radius: 50%;
     margin: 15px 0;
     box-shadow: 5px 5px 40px 5px rgba(142, 80, 80, 0.212);
@@ -113,11 +116,11 @@
     filter: opacity(0.7) drop-shadow(0 0 0 rgb(122, 2, 2));
 }
 
-.instructions .instructions-imgs .instructions-imgs-container .instructions-img-msg
+.instruction-container .instructions-imgs .instructions-imgs-container .instructions-img-msg
 {
     text-align: center;
     margin: 10px;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: bold;
     color: #461414;
 }

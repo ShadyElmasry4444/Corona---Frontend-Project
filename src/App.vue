@@ -1,7 +1,6 @@
 <template>
   <Styles />
   <Navbar></Navbar>
-
   <div class="section1">
     <div id="passage"></div>
     <Firstsection id="hero"></Firstsection>

@@ -1,4 +1,5 @@
 <template>
+    <section class="footer" id="footer">
     <footer>
     <div class="container">
         <div class="footer-top-msg-container">
@@ -30,10 +31,10 @@
                 <div class="footer-links">
                     <h5>Helpful links</h5>
                     <ul>
-                        <li><a href="#header">Healthcare Professionals</a></li>
-                        <li><a href="#header">Healthcare Facilities</a></li>
-                        <li><a href="#header">Older Adults & Medical Conditions</a></li>
-                        <li><a href="#header">Repair your Family</a></li>
+                        <li><a href="#hero">Healthcare Professionals</a></li>
+                        <li><a href="#hero">Healthcare Facilities</a></li>
+                        <li><a href="#hero">Older Adults & Medical Conditions</a></li>
+                        <li><a href="#hero">Repair your Family</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -41,8 +42,8 @@
                     <ul>
                         <li><a href="https://www.who.int/">WHO Website</a></li>
                         <li><a href="https://www.cdc.gov/">CDC Website</a></li>
-                        <li><a href="#header">NHS Website</a></li>
-                        <li><a href="#header">Harvard Health</a></li>
+                        <li><a href="#hero">NHS Website</a></li>
+                        <li><a href="#hero">Harvard Health</a></li>
                     </ul>
                 </div>
             </div>
@@ -50,6 +51,7 @@
         </div>
     </div>
 </footer>
+</section>
 </template>
 
 <style>

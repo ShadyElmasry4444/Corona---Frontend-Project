@@ -1,6 +1,6 @@
 <template>
     <section class="spread section-head" id="spread">
-    <div class="container">
+    <div class="spread-container">
         <div class="spread-info">
             <h5>How coronavirus is spread</h5>
                 <h2>Transmission of COVID-19</h2>
@@ -55,23 +55,23 @@
 </template>
 
 <style>
-.spread {
+.spread-container {
   padding: 100px 0;
   background-color: #f7f9fe;
 }
-.spread .spread-info {
+.spread-container .spread-info {
   text-align: center;
   margin: auto;
   width: 57%;
 }
-.spread .spread-info h5 {
+.spread-container .spread-info h5 {
   color: #990505;
   text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 0.1em;
   margin-bottom: 7px;
 }
-.spread .spread-info h2 {
+.spread-container .spread-info h2 {
   color: #461414;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
@@ -80,34 +80,35 @@
   margin-bottom: 25px;
 
 }
-.spread .spread-info p {
+.spread-container .spread-info p {
   color: #461414;
   margin-bottom: 60px;
   line-height: 1.5em;
  
 }
-.spread .spread-imgs-container {
+.spread-container .spread-imgs-container {
   display: flex;
   justify-content: space-between;
-  
+  margin: 50px 150px 50px 205px;
+  width: 80%;
 }
-.spread .spread-imgs-container .spread-imgs {
+.spread-container .spread-imgs-container .spread-imgs {
   flex-basis: 31%;
   margin: 0 auto 25px;
   border-radius: 20px;
   box-shadow: 0px 5px 40px 0px rgba(12, 7, 7, 0.24);
 }
-.spread .spread-imgs-container .spread-img img {
-  max-width: 100%;
+.spread-container .spread-imgs-container .spread-img img {
+  max-width: 50%;
   border-bottom: 2px solid;
   filter: opacity(0.4) drop-shadow(0 0 0 rgb(122, 2, 2));
 }
-.spread .spread-imgs-container .spread-imgs .spread-img-info {
+.spread-container .spread-imgs-container .spread-imgs .spread-img-info {
   background-color: #fff;
   padding: 25px;
   border-radius: 20px;
 }
-.spread .spread-imgs-container .spread-imgs .spread-img-info h3 {
+.spread-container .spread-imgs-container .spread-imgs .spread-img-info h3 {
   color: #990505;
   font-size: 18px;
   font-style: bold;
@@ -115,16 +116,16 @@
   margin-bottom: 7px;
   text-align: left;
 }
-.spread .spread-imgs-container .spread-imgs .spread-img-info p {
+.spread-container .spread-imgs-container .spread-imgs .spread-img-info p {
   color: #461414;
   line-height: 1.5em;
   text-align: left;
 }
-.spread .spread-btn {
+.spread-container .spread-btn {
   margin: 20px auto 0;
   width: fit-content;
 }
-.spread .spread-btn button {
+.spread-container .spread-btn button {
     padding: 13px 30px;
     font-size: 16px;
     border: none;

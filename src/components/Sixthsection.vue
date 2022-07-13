@@ -1,5 +1,5 @@
 <template>
-    <section class="hand-washing-steps section-head">
+    <section class="hand-washing-steps section-head" id="hand-washing">
     <div class="container">
         <div class="hand-washing-steps-container">
             <div class="hand-washing-steps-list">

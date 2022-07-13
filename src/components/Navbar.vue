@@ -1,16 +1,16 @@
 <template>
-    <section id="header">
+    <div id="header">
         <a href="#"><p class="logo">
             C<i class="fa-solid fa-virus"></i>VID<span>19</span></p></a>
         <div>
             <ul id="navbar">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about-corona">About Corona</a></li>
-                <li><a href="#symptoms">Symptoms</a></li>
-                <li><a href="#prevention">Prevention</a></li>
-                <li><a href="#treatment">Treatment</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#news">News</a></li>
+                <li class="hero"><a href="#hero">Home</a></li>
+                <li class="about-corona spread"><a href="#about-corona">About Corona</a></li>
+                <li class="symptoms"><a href="#symptoms">Symptoms</a></li>
+                <li class="prevention instructions hand-washing"><a href="#prevention">Prevention</a></li>
+                <li class="treatment"><a href="#treatment">Treatment</a></li>
+                <li class="faq"><a href="#faq">FAQ</a></li>
+                <li class="news"><a href="#news">News</a></li>
                 <a href="#dos-and-donts"><button type="button" class="btn btn-primary btn-lg">Do's and Don'ts</button></a>
                 <a href="#" id="close" onclick="openBar()"><i class="fa-solid fa-xmark"></i></a>
             </ul>
@@ -18,10 +18,20 @@
         <div id="mobile">
             <i id="bar" class="fa-solid fa-bars media" onclick="openBar()"></i>
         </div>
-    </section>
+    </div>
 </template>
 
 <style>
+#header ul li.active {
+  background-color: rgb(194, 71, 71);
+  border-radius: 5px;
+  transition: 0.3s ease background-color;
+  
+}
+#header ul li.active a {
+  color: rgb(255, 255, 255) !important;
+  padding: 5px;
+}
 
 #header a {
     text-decoration: none;
@@ -50,6 +60,7 @@
     background: #990505;
     border: #990505;
     margin: auto;
+    margin-left: 5px;
     align-self: center;
 }
 #navbar button:hover {
@@ -65,7 +76,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0px 100px;
-  background-color: none;
+  background-color: #edeff7;
   z-index: 999;
   position: sticky;
   top: 0;
@@ -99,11 +110,10 @@
   transition: 0.3s;
 }
 
-#header #navbar li a:hover,
-#header #navbar li a.active {
+#header #navbar li a:hover {
   color: #990505;
 }
-#header #navbar li a.active::after,
+
 #header #navbar li a:hover::after {
   content: "";
   width: 30%;
@@ -112,6 +122,10 @@
   bottom: -10%;
   left: 20px;
   position: absolute;
+}
+
+#header #navbar li a.active::after {
+  color: #fff;
 }
 
 #header #mobile {
@@ -123,12 +137,13 @@
 }
 
 .scrollActive {
-  background-color: #fff;
+  background-color: #fff !important;
+  transition: 0.5s background-color;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-  animation: scrollActiveAnimation 1s;
+  /* animation: scrollActiveAnimation 1s; */
 }
 
-@keyframes scrollActiveAnimation {
+/* @keyframes scrollActiveAnimation {
   from {
     background: transparent;
   }
@@ -143,19 +158,10 @@
   to {
     background: transparent;
   }
-}
+} */
 
 .scrollInactive {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 100px;
-  background-color: none;
-  z-index: 999;
-  position: sticky;
-  top: 0;
-  left: 0;
-  animation: scrollInactiveAnimation 1s;
+background: #edeff7;
 }
 
 

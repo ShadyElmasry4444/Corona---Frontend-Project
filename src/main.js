@@ -4,6 +4,9 @@ import router from "./router";
 
 createApp(App).use(router).mount("#app");
 
+
+
+// Navbar menu
 const bar = document.getElementById("bar");
 const close = document.getElementById("close");
 const nav = document.getElementById("navbar");
@@ -19,7 +22,7 @@ if (close) {
     nav.classList.remove("active");
   });
 }
-
+// Navbar background on scroll
 let lastKnownScrollPosition = 0;
 let ticking = false;
 
@@ -47,7 +50,7 @@ document.addEventListener("scroll", function () {
   }
 });
 
-// ***********************************
+// Back to top button
 
 //Get the button:
 const mybutton = document.getElementById("back-to-top-btn");
@@ -64,6 +67,10 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
+
+// End back to top button
+
+// FAQ section information changing
 
 const button1 = document.getElementById("El1");
 const button2 = document.getElementById("El2");
@@ -169,3 +176,27 @@ if (button6) {
     content6.classList.add("active");
   });
 }
+
+
+// Navbar highlight on screen position
+
+const sections = document.querySelectorAll("section");
+console.log(sections);
+const navLi = document.querySelectorAll("#navbar li");
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (scrollY >= sectionTop - sectionHeight / 3) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+});
