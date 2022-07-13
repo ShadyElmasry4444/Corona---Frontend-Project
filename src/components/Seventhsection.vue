@@ -98,9 +98,10 @@
 }
 .instruction-container .instructions-imgs .instructions-imgs-container
 {
-    flex-basis: 10%;
+    flex-basis: 20%;
     align-self: center;
     margin: auto;
+    margin-top: 0 !important;
 }
 .instruction-container .instructions-imgs .instructions-imgs-container .instructions-img
 {
@@ -123,5 +124,16 @@
     font-size: 17px;
     font-weight: bold;
     color: #461414;
+}
+
+.instructions-imgs-container p {
+    font-size: 1rem;
+}
+
+@media (max-width: 950px) {
+.instruction-container .instructions-imgs{
+    margin: auto;
+}
+
 }
 </style>

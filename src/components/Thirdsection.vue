@@ -139,4 +139,9 @@
   
 }
 
+@media (max-width: 950px) {
+.spread-container .spread-imgs-container {
+margin: auto;
+}
+}
 </style>

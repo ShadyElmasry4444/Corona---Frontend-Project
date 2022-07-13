@@ -211,4 +211,14 @@
     margin-left: 5px;
 }
 
+
+@media (max-width: 950px) {
+.symptoms-moreinfo.symptoms-child {
+display: inline-block;
+}
+.symptom-btn {
+width: 50%;
+}
+}
+
 </style>

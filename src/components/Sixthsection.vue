@@ -139,4 +139,18 @@
 {
     max-width: 100%;
 }
+
+
+@media (max-width: 950px) {
+.hand-washing-steps .hand-washing-steps-container .hand-washing-steps-img img {
+display: none;
+}
+.hand-washing-steps .hand-washing-steps-container .hand-washing-steps-img {
+display:none;
+}
+.hand-washing-steps .hand-washing-steps-container .hand-washing-steps-list {
+    flex-basis: 100%;
+    margin: auto;
+}
+}
 </style>

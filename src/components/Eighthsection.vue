@@ -134,4 +134,10 @@
 {
     margin-right: 10px;
 }
+
+@media (max-width: 950px) {
+.be-careful .be-careful-container .be-careful-right-container ul{
+    width: 200px
+}
+}
 </style>
